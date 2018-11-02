@@ -1,10 +1,42 @@
-
 header, main, body, footer {
     padding-left: 300px;
-    }
+    background-color: #A67F8E;
+}
 
-    @media only screen and (max-width : 992px) {
+@media only screen and (max-width : 992px) {
     header, main, footer {
         padding-left: 0;
     }
-    }  
+}  
+#top-nav {
+    background-color: #74526C;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+.lightbox img {
+        width: 100%;
+      margin-bottom: 30px;
+      transition: .2s ease-in-out;
+      box-shadow: 0 2px 3px rgba(0,0,0,.2);
+      max-height: 198px;
+      object-fit: cover;
+}
+#my-name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fa-instagram {
+    font-size: 250%;
+    text-align: center;
+    padding-left: 105px;
+    padding-top: 5px;
+    padding-bottom: -40px;
+}
+#email {
+    padding-top: -50px;
+}
+.sidenav {
+    background-color: #C89FA3;
+    text-align: center;
+}
