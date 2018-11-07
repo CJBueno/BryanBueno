@@ -1,26 +1,29 @@
 header, main, body, footer {
     padding-left: 300px;
-    background-color: #A67F8E;
+    background-color: rgb(24, 1, 14);
+    color: #74526C;
 }
-
+hr {
+    border-color: #74526C;
+}
 @media only screen and (max-width : 992px) {
     header, main, footer {
         padding-left: 0;
     }
-}  
+/* }  
 #top-nav {
-    background-color: #74526C;
-    color: black;
+    background-color:rgb(24, 1, 14);
+    color: #74526C;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 10px; */
 }
 .lightbox img {
-        width: 100%;
-      margin-bottom: 30px;
-      transition: .2s ease-in-out;
-      box-shadow: 0 2px 3px rgba(0,0,0,.2);
-      max-height: 198px;
-      object-fit: cover;
+    width: 100%;
+    margin-bottom: 30px;
+    transition: .2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,.2);
+    max-height: 198px;
+    object-fit: cover;
 }
 #my-name {
     padding-top: 10px;
@@ -35,8 +38,26 @@ header, main, body, footer {
 }
 #email {
     padding-top: -50px;
+    color: #74526C;
 }
 .sidenav {
-    background-color: #C89FA3;
+    background-color: rgb(24, 1, 14);
+    color: rgb(190, 160, 183);
     text-align: center;
+}
+#side-links {
+    color: #74526C;
+}
+.main-art {
+    min-height: 300px;
+}
+.art-thumb {
+    border-radius: 20px;
+    height: 250px;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.art-thumb:hover {
+    opacity: .5;
 }
