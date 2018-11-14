@@ -1,11 +1,13 @@
 header, main, body, footer {
-    padding-left: 300px;
+    padding-left: 100px;
+    /* padding-top: 20px; */
     background-color: rgb(24, 1, 14);
     color: #74526C;
     font-size:10vw;
+    font-family: "Playfair Display", serif;  
 }
 hr {
-    border-color: #74526C;
+    border-color: rgb(190, 160, 183);
 }
 @media only screen and (max-width : 800px) {
     header, main, footer, .sidenav{
@@ -13,9 +15,43 @@ hr {
         width: 100%;
     }
 }
+#titletext {
+    color: white;
+    text-align: right;
+    padding-top: 37%;
+    padding-left: 30%;
+    padding-right: 2%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 25px;
+    font-size: 90px;
+    animation-name: titleappear;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+}
+@keyframes titleappear {
+    0% {
+        position: absolute;
+        right: -5rem;
+        opacity: 0;
+    }
+    100% {
+        position: absolute;
+        right: 0rem;
+        opacity: 1;
+    }
+}
+.mainpic {
+    width: 100%;
+    padding-left: 100px;
+}
 .lightbox img {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 2px;
     transition: .2s ease-in-out;
     box-shadow: 0 2px 3px rgba(0,0,0,.2);
     max-height: 198px;
@@ -24,6 +60,9 @@ hr {
 #my-name {
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
 }
 .fa-instagram {
     font-size: 250%;
@@ -35,14 +74,17 @@ hr {
 #email {
     padding-top: -50px;
     color: #74526C;
+    font-size: 20px;
 }
-.sidenav {
-    background-color: rgb(24, 1, 14);
+.sidenav-fixed{
+    background: linear-gradient(90deg, rgb(48, 6, 30), rgb(24, 1, 14) ),rgb(24, 1, 14);
     color: rgb(190, 160, 183);
     text-align: center;
+    border-style: none;
 }
 #side-links {
     color: #74526C;
+    font-size: 25px;
 }
 .main-art {
     min-height: 300px;
