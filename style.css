@@ -9,12 +9,20 @@ header, main, body, footer {
 hr {
     border-color: rgb(190, 160, 183);
 }
-@media only screen and (max-width : 800px) {
+/* @media only screen and (max-width : 800px) {
     header, main, footer, .sidenav{
         padding-left: 0;
         width: 100%;
     }
-}
+} */
+@media only screen and (max-width: 768px) {
+    .sidenav {
+      display: none;
+    }
+    .content {
+      margin-right: 0;
+    }
+  }
 #titletext {
     color: white;
     text-align: right;
@@ -100,4 +108,16 @@ hr {
 }
 .art-thumb:hover {
     opacity: .5;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding-left: 240px;
+    min-width: 100%; 
+    min-height: fit-content;
+    width: fit-content;
+    height: fit-content;
+    z-index: -100;
 }
