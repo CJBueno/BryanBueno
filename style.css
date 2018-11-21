@@ -1,38 +1,6 @@
-/* header, main, body, footer { */
-    /* padding-left: 100px; */
-    /* padding-top: 20px; */
-    /* background-color: rgb(24, 1, 14);
-    color: #74526C;
-    font-size:10vw;
-    font-family: "Playfair Display", serif; */
-/* } */
 hr {
     border-color: rgb(190, 160, 183);
 }
-
-/* @media (max-width: 720px) {
-    #myVideo {
-        display: none;
-    }
-    .mobilepage {
-        max-width: 100%;
-        display: block;
-        height: auto;
-        text-align: center;
-        position: block;
-        padding-right: 100px;
-        margin: 0px;
-        font-size: 10px;
-    }
-    /* .circle {
-        position: center;
-        padding-right: 100px;
-    } */
-    /* .fa-instagram {
-        position: center;
-        padding-right: 100px;
-    } */
-/* } */
 .mainpic {
     display: none;
 }
@@ -132,10 +100,10 @@ hr {
     padding: 10px;
 }
 .left {
-    width: 75%;
+    width: 80%;
 }
 .right {
-    width: 25%;
+    width: 20%;
     text-align: center;
 }
 /* Clear floats after the columns */
@@ -149,5 +117,8 @@ hr {
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
+    }
+    .left {
+        display: none;
     }
 }
