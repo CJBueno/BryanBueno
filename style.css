@@ -11,6 +11,9 @@
 body {
     background: linear-gradient(90deg, rgb(24, 1, 14),rgb(24, 1, 14),rgb(48, 6, 30));
     font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 h2 {
     color: rgb(219, 177, 184);
@@ -23,15 +26,23 @@ a {
 }
 hr {
     border-color: rgb(190, 160, 183);
+    width: auto;
 }
 .small-main-pic {
     margin-top: 3px;
     margin-left: 8px;
     position: relative;
 }
+#main-content {
+    text-align: center;
+}
 .lightbox img {
-    width: 100%;
+    text-align: center;
+    max-width: 100%;
     margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     transition: .2s ease-in-out;
     box-shadow: 0 2px 3px rgba(0,0,0,.2);
     max-height: 198px;
@@ -41,6 +52,7 @@ hr {
     border-radius: 20px;
     height: 250px;
     opacity: 1;
+    padding-top: 5px;
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
     width: 100%;
@@ -49,16 +61,6 @@ hr {
     opacity: .5;
 }
 /*  Start of Columns */
-.fa-instagram {
-    font-size: 250%;
-    text-align: center;
-}
-#myVideo {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    overflow: auto;
-}
 .column {
     float: left;
     width: 50%;
@@ -70,19 +72,29 @@ hr {
 .right {
     width: 20%;
     text-align: center;
-    background-color: 0;
 }
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+.fa-instagram {
+    font-size: 250%;
+    text-align: center;
+}
+#myVideo {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    overflow: auto;
+}
 .circle {
     max-width: 100%;
     display: block;
-    height: auto;
-    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    padding: 0px;
 }
 @media screen and (max-width: 600px) {
 
@@ -96,6 +108,9 @@ hr {
         margin: auto;
         display: block;
         max-width: 100%;
+    }
+    article {
+        font-size: 1.5em;
     }
 }
 /* End of Columns */
