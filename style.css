@@ -1,40 +1,34 @@
+@media screen and (max-width: 600px) {
+
+    .small-art {
+        max-width: 50%;
+        display: block;
+        height: auto;
+        position: relative;
+    }
+
+}
+body {
+    background: linear-gradient(90deg, rgb(24, 1, 14),rgb(24, 1, 14),rgb(48, 6, 30));
+    font-family: 'Titillium Web', sans-serif;
+}
+h2 {
+    color: rgb(219, 177, 184);
+}
+nav {
+    background: linear-gradient(90deg, rgb(24, 1, 14),rgb(24, 1, 14),rgb(48, 6, 30));
+}
+a {
+    color:rgb(190, 160, 183);
+}
 hr {
     border-color: rgb(190, 160, 183);
 }
-.mainpic {
-    display: none;
+.small-main-pic {
+    padding-top: 8px;
+    padding-left: 8px;
+    position: relative;
 }
-#titletext {
-    color: white;
-    text-align: right;
-    padding-top: 37%;
-    padding-left: 30%;
-    padding-right: 2%;
-    font-family: 'PT Sans Narrow', sans-serif;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    margin-top: 25px;
-    font-size: 90px;
-    animation-name: titleappear;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-}
-@keyframes titleappear {
-    0% {
-        position: absolute;
-        right: -5rem;
-        opacity: 0;
-    }
-    100% {
-        position: absolute;
-        right: 0rem;
-        opacity: 1;
-    }
-}
-
 .lightbox img {
     width: 100%;
     margin-bottom: 2px;
@@ -42,39 +36,6 @@ hr {
     box-shadow: 0 2px 3px rgba(0,0,0,.2);
     max-height: 198px;
     object-fit: cover;
-}
-#my-name {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-}
-.fa-instagram {
-    font-size: 250%;
-    text-align: center;
-    padding-left: 105px;
-    padding-top: 5px;
-    padding-bottom: -40px;
-}
-#email {
-    padding-top: -50px;
-    color: #74526C;
-    font-size: 20px;
-}
-.sidenav-fixed{
-    background: linear-gradient(90deg, rgb(48, 6, 30), rgb(24, 1, 14) ),rgb(24, 1, 14);
-    color: rgb(190, 160, 183);
-    text-align: center;
-    border-style: none;
-}
-#side-links {
-    color: #74526C;
-    font-size: 25px;
-}
-.main-art {
-    min-height: 300px;
-    max-width: 100%;
 }
 .art-thumb {
     border-radius: 20px;
@@ -87,7 +48,11 @@ hr {
 .art-thumb:hover {
     opacity: .5;
 }
-
+/*  Start of Columns */
+.fa-instagram {
+    font-size: 250%;
+    text-align: center;
+}
 #myVideo {
     max-width: 100%;
     max-height: 100%;
@@ -105,20 +70,28 @@ hr {
 .right {
     width: 20%;
     text-align: center;
+    background-color: 0;
 }
-/* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+.circle {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    position: relative;
+}
 @media screen and (max-width: 600px) {
+
     .column {
         width: 100%;
     }
     .left {
         display: none;
     }
+
 }
+/* End of Columns */
