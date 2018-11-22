@@ -93,11 +93,9 @@ hr {
         display: none;
     }
     .circle {
-        margin-left: 15%;
+        margin: auto;
         display: block;
         max-width: 100%;
-        height: auto;
-        position: relative;
     }
 }
 /* End of Columns */
