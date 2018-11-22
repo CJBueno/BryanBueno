@@ -94,6 +94,10 @@ hr {
     }
     .circle {
         margin-left: 15%;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        position: relative;
     }
 }
 /* End of Columns */
